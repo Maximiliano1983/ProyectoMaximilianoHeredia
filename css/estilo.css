@@ -1,0 +1,470 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: rgb(134, 140, 150);
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+
+/*HEADER*/
+
+header{
+    background-image: url("../img/lemon-pie.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: space-between; 
+    padding: 2rem;    
+}
+
+
+
+
+h1{
+    font-weight: 100;
+    font-size: 80px;
+    font-family: 'Comforter', cursive;
+    text-align: center;  
+    padding-top: 18px;       
+}
+
+header .redes{
+    display: flex;
+    justify-content: flex-end;
+   
+    align-items: center;
+    
+
+}
+header .redes a{
+    margin-left: 10px;
+
+}
+
+header i{
+    font-size: 30px;
+}
+
+main{
+    padding: 1rem;
+}
+
+.logo img{
+    width: 175px; 
+}
+
+/*MENU*/
+
+nav{
+    background: violet;
+   
+   
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+/*MAIN*/
+
+.introduccion{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px;
+    grid-template-areas: "a1 a2";
+    justify-items: center;
+    align-items: center;
+
+}
+.parteUno{
+    grid-area: a1;
+    padding: 1.5rem;
+}
+.parteDos{
+    grid-area: a2;
+}
+.introduccion img{
+ width: 80%;
+}
+
+.mihistoria{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.mihistoria img{
+    max-width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.mihistoria h2{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.mihistoria p{
+    max-width: 600px;
+    padding-top: 2rem;
+}
+
+
+main img{    
+width: 600px;
+padding-top: 2rem;
+padding-bottom: 2rem;
+    
+}
+
+main h2{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 2rem;
+   
+    
+}
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    max-width: 500px;
+    text-align: left;
+ 
+}
+
+form{
+    max-width: 450px;
+    margin: auto;
+    background: tomato;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px ;
+    border-radius: 7px;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+form h2{
+    color:white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border:none
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#botton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+}
+
+#titulogaleria{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.nuestrasdelicias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "a1 a2 a3"
+                         "a4 a5 a6"
+                         "a7 a8 a9"
+                         "a10 a11 a12"
+                         "a13 a14 a15";
+    justify-items: center;
+    align-items: center;
+    grid-auto-rows: 100px;
+}
+.img1{
+    grid-area: a1;
+}
+.img2{
+    grid-area: a2;
+}
+.img3{
+    grid-area: a3;
+}
+.img4{
+    grid-area: a4 ;
+}
+.img5{
+    grid-area: a5;
+}
+.img6{
+    grid-area: a6;
+}
+.img7{
+    grid-area: a7;
+}
+.img8{
+    grid-area: a8;
+}
+.img9{
+    grid-area: a9;
+}
+.img10{
+    grid-area: a10;
+}
+.img11{
+    grid-area: a11;
+}
+.img12{
+    grid-area: a12;
+}
+.img13{
+    grid-area: a13;
+}
+.img14{
+    grid-area: a14;
+}
+.img15{
+    grid-area: a15;
+}
+.nuestrasdelicias img{
+   width: 80%
+   
+}
+.nuestrasdelicias img:hover{
+    transform: scale(0.5,0.5)
+    
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 2rem;
+}
+
+.productos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px;
+    grid-template-areas: "a1 a2";
+    justify-items: center;
+    align-items: center;
+
+
+}
+.p1{
+    grid-area: a1;
+
+}
+.p2{
+    grid-area: a2;
+    
+}
+.productos img{
+    width: 80%;
+   }
+
+.productos p{
+    padding-bottom: 4rem;
+}
+
+.productos h2{
+    padding-top: 2rem;
+}
+.productos h3{
+    padding-bottom: 1rem;
+    
+}
+
+
+
+    /*FOOTER*/
+    
+footer{
+    background: tomato;
+    height: 100px;
+    display:flex;
+    justify-content: space-between; 
+    padding: 1rem;  
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+footer i{
+    font-size: 30px;
+     
+}
+
+footer .redes a{
+    margin-left: 10px;
+
+}
+
+footer .redes{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+button{
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.7rem;
+    background-color: black;
+    color:white;
+    align-items: center; 
+}
+
+/**********Media Querie*****/
+
+@media only screen and ( max-width:600px ) {
+
+    header{
+        height: 385px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display:flex;
+        flex-direction:column ;
+        justify-content: space-between; 
+        padding: 2rem;    
+    }
+    h1{
+        font-weight: 50;
+        font-size: 50px;    
+    }
+    .logo img{
+        width: 125px; 
+    }
+    ul{
+        flex-direction: column;
+        align-items:center
+    }
+    .introduccion{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a1"
+                             "a2";
+        justify-items: center;
+        align-items: center;   
+    }
+    .introduccion h2{
+        padding-top: 2rem;
+    }
+    .productos{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a1"
+                             "a2";
+        justify-items: center;
+        align-items: center;
+    }
+    .productos p{
+        padding-bottom: 1rem;
+    }
+    footer{
+        height: auto;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nuestrasdelicias{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15,1fr);
+        grid-template-areas: "a1"
+                              "a2"
+                              "a3"
+                             "a4" 
+                              "a5" 
+                              "a6"
+                             "a7" 
+                             "a8"
+                             "a9"
+                             "a10" 
+                             "a11" 
+                             "a12"
+                             "a13"
+                              "a14"
+                              "a15";
+    }
+    .mihistoria h2{
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .mihistoria p{
+        max-width: 400px;
+        padding-top: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
