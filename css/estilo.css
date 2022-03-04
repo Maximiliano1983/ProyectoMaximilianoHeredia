@@ -19,10 +19,8 @@ a:hover{
 }
 
 /*HEADER*/
-
 header{
     background-image: url("../img/lemon-pie.jpg");
-    height: 150px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -82,11 +80,14 @@ ul{
     justify-content: space-evenly;
 }
 
+
 li{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
 }
+
+
 
 /*MAIN*/
 
@@ -108,7 +109,7 @@ li{
 }
 .introduccion img{
  width: 80%;
-}
+} 
 
 .mihistoria{
     display:flex;
@@ -138,13 +139,25 @@ main img{
 width: 600px;
 padding-top: 2rem;
 padding-bottom: 2rem;
-    
+} 
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    box-sizing: border-box;
 }
 
 main h2{
     font-size: 30px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 2rem;
+    font-weight: 700;
+    color: black;
    
     
 }
@@ -153,6 +166,7 @@ main p{
     font-size: 20px;
     max-width: 500px;
     text-align: left;
+    color: black;
  
 }
 
@@ -263,15 +277,20 @@ textarea{
    
 }
 .nuestrasdelicias img:hover{
-    transform: scale(0.5,0.5)
-    
+    transform: scale(1.2);   
 }
-.card{
+.tarjeta{
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    padding-bottom: 2rem;
+} 
+
+#galeria .col-lg-4{
+    padding: 10px;
+    margin: 0 !important;
+
 }
 
 .productos{
@@ -314,7 +333,6 @@ textarea{
     
 footer{
     background: tomato;
-    height: 100px;
     display:flex;
     justify-content: space-between; 
     padding: 1rem;  
@@ -360,6 +378,19 @@ button{
     background-color: black;
     color:white;
     align-items: center; 
+}
+
+.carousel-item {
+
+    height: 450px;
+}
+.carousel-item img {
+    
+    width: 100%;
+    
+    height: 100%;
+    
+    object-fit: cover;
 }
 
 /**********Media Querie*****/
