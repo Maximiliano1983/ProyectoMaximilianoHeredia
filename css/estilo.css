@@ -115,6 +115,12 @@ li{
     grid-area: a4;
 }
 
+.parteCuatro iframe{
+    width: 500px;
+    
+}
+
+
 .introduccion img{
  width: 80%;
 } 
