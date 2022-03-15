@@ -1,0 +1,50 @@
+/*FOOTER*/
+    
+footer{
+    background: $secondColor;
+    display:flex;
+    justify-content: space-between; 
+    padding: 1rem;  
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+footer i{
+    font-size: 30px;
+}
+
+footer .redes a{
+    margin-left: 10px;
+
+}
+
+footer .redes{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+button{
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.7rem;
+    background-color: white;
+    color:black;
+    align-items: center; 
+}

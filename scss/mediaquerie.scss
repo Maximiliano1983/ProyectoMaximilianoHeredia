@@ -1,0 +1,112 @@
+/**********Media Querie*****/
+
+@media only screen and ( max-width:600px ) {
+
+    header{
+        height: 385px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display:flex;
+        flex-direction:column ;
+        justify-content: space-between; 
+        padding: 2rem;    
+    }
+
+    h1{
+        font-weight: 50;
+        font-size: 50px;    
+    }
+
+    .logo img{
+        width: 125px; 
+    }
+
+    ul{
+        flex-direction: column;
+        align-items:center
+    }
+
+    /*Index*/
+
+    .introduccion{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 600px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+        justify-items: center;
+        align-items: center;   
+    }
+
+    .introduccion h2{
+        padding-top: 2rem;
+    }
+    .carousel{
+        width: 100%;
+    }
+
+    .carousel-item{
+        height: 600px;
+    }
+
+    /*Productos*/
+
+    .productos{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 300px;
+        grid-template-areas: "a1"
+                             "a2";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .productos p{
+        padding-bottom: 1rem;
+    }
+
+    /*Galeria*/
+
+    .nuestrasdelicias{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15,1fr);
+        grid-template-areas: "a1"
+                              "a2"
+                              "a3"
+                             "a4" 
+                              "a5" 
+                              "a6"
+                             "a7" 
+                             "a8"
+                             "a9"
+                             "a10" 
+                             "a11" 
+                             "a12"
+                             "a13"
+                              "a14"
+                              "a15";
+    }
+
+    /*Acerca de mi*/
+
+    .mihistoria h2{
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .mihistoria p{
+        max-width: 400px;
+        padding-top: 2rem;
+    }
+
+    footer{
+        height: auto;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
