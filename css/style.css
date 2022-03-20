@@ -17,11 +17,6 @@ h1 {
   padding-top: 18px;
   color: #0D0D0D; }
 
-header .redes {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
 header .redes a {
   margin-left: 10px; }
 
@@ -283,11 +278,6 @@ footer i {
 footer .redes a {
   margin-left: 10px; }
 
-footer .redes {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 25px; }
-
 footer ul {
   display: flex;
   flex-direction: column;
@@ -363,3 +353,38 @@ button {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: whitesmoke;
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  color: white; }
+
+/*EXTEND*/
+.redes, header .redes, footer .redes {
+  display: flex;
+  justify-content: flex-end; }
+
+header .redes {
+  align-items: center; }
+
+footer .redes {
+  padding-right: 25px; }
+
+/*MIXIN*/
+.btnEnviar {
+  background-color: #31384a;
+  color: #fff; }
+
+.btnLimpiar {
+  background-color: #31384a;
+  color: #fff; }

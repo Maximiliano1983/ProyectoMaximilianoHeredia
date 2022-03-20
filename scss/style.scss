@@ -1,9 +1,48 @@
-@import "variables.scss";
-@import "header.scss";
-@import "menu.scss";
-@import "main.scss";
-@import "footer.scss";
-@import "mediaquerie.scss";
+@import "_variables.scss";
+@import "_header.scss";
+@import "_menu.scss";
+@import "_main.scss";
+@import "_footer.scss";
+@import "_mediaquerie.scss";
+@import "_generales.scss";
+
+/*EXTEND*/
+
+.redes{
+    display:flex;
+    justify-content: flex-end;
+}
+
+header .redes{
+    @extend.redes;
+    align-items: center;              
+}
+
+footer .redes{
+    @extend.redes;
+    padding-right: 25px;
+}
+
+/*MIXIN*/
+
+
+
+@mixin botones ($bgcolor, $colorLetra){
+    background-color:$bgcolor;
+    color: $colorLetra;
+
+
+    
+}
+
+.btnEnviar{
+    @include botones(#31384a,#fff)
+}
+
+.btnLimpiar{
+    @include botones(#31384a,#fff)
+}
+
 
 
 
