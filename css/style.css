@@ -363,18 +363,3 @@ button {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center; } }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  background: whitesmoke;
-  width: 100%; }
-
-a {
-  text-decoration: none;
-  color: white; }
-
-a:hover {
-  color: white; }
