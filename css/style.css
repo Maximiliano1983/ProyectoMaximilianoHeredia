@@ -347,6 +347,10 @@ button {
   .carousel-item {
     height: 600px; }
 
+  .parteCuatro iframe{
+    width: 100%;
+  }
+
   /*Productos*/
 
   .productos {
