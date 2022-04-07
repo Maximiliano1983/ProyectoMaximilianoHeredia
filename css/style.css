@@ -35,7 +35,7 @@ nav {
   background: violet; }
 
 .bg-dark {
-  background-color: #0D0D0D; }
+  background-color: #0D0D0D !important; }
 
 ul {
   list-style-type: none;
@@ -362,7 +362,7 @@ button {
     justify-items: center;
     align-items: center; }
   .productos p {
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;}
 
   /*Galeria*/
 
